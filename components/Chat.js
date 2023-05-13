@@ -40,13 +40,13 @@ const Chat = ({ db, route, navigation, isConnected }) => {
   }, [isConnected]);
 
   const loadCachedMessages = async () => {
-    const cachedLists = await AsyncStorage.getItem("messages") || [];
-    setLists(JSON.parse(cachedLists));
+    const cachedMessages = await AsyncStorage.getItem("messages") || [];
+    setMessages(JSON.parse(cachedMessages));
   }
 
-  const cacheMessages = async (listsToCache) => {
+  const cacheMessages = async (messagesToCache) => {
     try {
-      await AsyncStorage.setItem('messages', JSON.stringify(listsToCache));
+      await AsyncStorage.setItem('messages', JSON.stringify(messagesToCache));
     } catch (error) {
       console.log(error.message);
     }
