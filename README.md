@@ -51,13 +51,18 @@ SET UP DEVELOPMENT ENVIRONMENT
 EXPO:
 
 Install the Expo CLI on your machine: "npm install -g expo-cli".
+
 Download Expo Go app on your phone.
+
 Create an Expo account.
+
 Start Expo thru terminal with "expo start".
 
 
 GOOGLE FIREBASE:
 
 Head to Google Firebase and sign in. Use existing Google credentials or create a new account.
+
 Create a project (or Add project if you've created Firebase projects before).
+
 Create a database.
